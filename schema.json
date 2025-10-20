@@ -1,0 +1,1046 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Onderhandse verkoopovereenkomst Vlaanderen — Dossier",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "datum_vandaag": {
+          "type": "string",
+          "format": "date"
+        },
+        "taal": {
+          "type": "string",
+          "enum": [
+            "nl",
+            "fr",
+            "en"
+          ]
+        }
+      }
+    },
+    "makelaar": {
+      "type": "object",
+      "properties": {
+        "naam": {
+          "type": "string"
+        },
+        "biv_nummer": {
+          "type": "string"
+        },
+        "kantoor": {
+          "type": "string"
+        },
+        "straat": {
+          "type": "string"
+        },
+        "nummer": {
+          "type": "string"
+        },
+        "bus": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "postcode": {
+          "type": "string"
+        },
+        "gemeente": {
+          "type": "string"
+        },
+        "ba_borgstelling": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "naam",
+        "biv_nummer",
+        "kantoor",
+        "straat",
+        "nummer",
+        "postcode",
+        "gemeente"
+      ]
+    },
+    "verkoper": {
+      "type": "object",
+      "properties": {
+        "natuurlijk_persoon": {
+          "type": "boolean"
+        },
+        "vennootschap": {
+          "type": "boolean"
+        },
+        "naam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "voornaam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "adres": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geboorteplaats": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geboortedatum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "burgerlijke_staat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "onderneming_naam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ondernemingsnummer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "zetel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vertegenwoordiger": {
+          "type": "object",
+          "properties": {
+            "naam": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "voornaam": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "adres": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "hoedanigheid": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "hoedanigheid": {
+          "type": "object",
+          "properties": {
+            "eigenaar": {
+              "type": "boolean"
+            },
+            "lasthebber": {
+              "type": "boolean"
+            },
+            "sterk_maken": {
+              "type": "boolean"
+            },
+            "sterk_maken_voor": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "bekrachtiging_termijn": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "telefoonnummer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "email",
+            "telefoonnummer"
+          ]
+        }
+      },
+      "required": [
+        "contact"
+      ]
+    },
+    "koper": {
+      "type": "object",
+      "properties": {
+        "natuurlijk_persoon": {
+          "type": "boolean"
+        },
+        "vennootschap": {
+          "type": "boolean"
+        },
+        "voor_zichzelf": {
+          "type": "boolean"
+        },
+        "vennootschap_in_oprichting": {
+          "type": "boolean"
+        },
+        "vennootschap_naam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "command": {
+          "type": "boolean"
+        },
+        "aanwas": {
+          "type": "boolean"
+        },
+        "verhouding": {
+          "type": "boolean"
+        },
+        "aandeel_verhouding": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "naam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "voornaam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "adres": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geboorteplaats": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geboortedatum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "burgerlijke_staat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "onderneming_naam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ondernemingsnummer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "zetel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "vertegenwoordiger": {
+          "type": "object",
+          "properties": {
+            "naam": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "voornaam": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "adres": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "hoedanigheid": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "telefoonnummer": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "email",
+            "telefoonnummer"
+          ]
+        }
+      },
+      "required": [
+        "contact"
+      ]
+    },
+    "goed": {
+      "type": "object",
+      "properties": {
+        "straat": {
+          "type": "string"
+        },
+        "nummer": {
+          "type": "string"
+        },
+        "bus": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "postcode": {
+          "type": "string"
+        },
+        "gemeente": {
+          "type": "string"
+        },
+        "land": {
+          "type": "string"
+        },
+        "aard": {
+          "type": "string"
+        },
+        "kadastrale_afdeling": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kadastrale_sectie": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kadastrale_nummer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kadastrale_oppervlakte": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "kadastraal_inkomen": {
+          "type": "object",
+          "properties": {
+            "bedraagt": {
+              "type": "boolean"
+            },
+            "bedrag": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "niet_gekend": {
+              "type": "boolean"
+            },
+            "niet_vastgesteld": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "required": [
+        "straat",
+        "nummer",
+        "postcode",
+        "gemeente",
+        "land",
+        "aard"
+      ]
+    },
+    "roerende_goederen": {
+      "type": "object",
+      "properties": {
+        "geen": {
+          "type": "boolean"
+        },
+        "inbegrepen": {
+          "type": "boolean"
+        },
+        "waarde": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "gezinswoning": {
+      "type": "object",
+      "properties": {
+        "beschermd": {
+          "type": "boolean"
+        },
+        "akkoord_verklaring": {
+          "type": "boolean"
+        },
+        "akkoord_tussen": {
+          "type": "boolean"
+        },
+        "echtgenoot_naam": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "echtgenoot": {
+          "type": "boolean"
+        },
+        "wettelijk_samenwonend": {
+          "type": "boolean"
+        },
+        "akkoord_datum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "genot": {
+      "type": "object",
+      "properties": {
+        "verhuurd": {
+          "type": "boolean"
+        },
+        "niet_verhuurd": {
+          "type": "boolean"
+        },
+        "gedeeltelijk_verhuurd": {
+          "type": "boolean"
+        },
+        "publiciteitspanelen_aanwezig": {
+          "type": "boolean"
+        },
+        "publiciteitspanelen_voorkooprecht": {
+          "type": "boolean"
+        },
+        "voorafgaand": {
+          "type": "boolean"
+        },
+        "voorafgaand_datum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "voorafgaand_zonder_vergoeding": {
+          "type": "boolean"
+        },
+        "voorafgaand_bedrag": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "prijs": {
+      "type": "object",
+      "properties": {
+        "totaal": {
+          "type": "number"
+        },
+        "voorschot": {
+          "type": "object",
+          "properties": {
+            "bedrag": {
+              "type": "number"
+            },
+            "cheque": {
+              "type": "boolean"
+            },
+            "cheque_nummer": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "cheque_bedrag": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "cheque_rekening": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "cheque_bank": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "cheque_naam": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "overschrijving": {
+              "type": "boolean"
+            },
+            "overschrijving_bedrag": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "overschrijving_rekening": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "overschrijving_bank": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "overschrijving_naam": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "als_voorschot": {
+              "type": "boolean"
+            },
+            "als_waarborg": {
+              "type": "boolean"
+            },
+            "derdenrekening": {
+              "type": "boolean"
+            },
+            "derdenrekening_nummer": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "notaris": {
+              "type": "boolean"
+            },
+            "notaris_rekening": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "commissie_toestemming": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "bedrag"
+          ]
+        },
+        "saldo_koopsom": {
+          "type": "number"
+        },
+        "betaling": {
+          "type": "object",
+          "properties": {
+            "cheque": {
+              "type": "boolean"
+            },
+            "overschrijving": {
+              "type": "boolean"
+            },
+            "rekening": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "bank": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "naam": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "krediet": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "required": [
+        "totaal",
+        "saldo_koopsom"
+      ]
+    },
+    "elektrische_keuring": {
+      "type": "object",
+      "properties": {
+        "vrijstelling": {
+          "type": "boolean"
+        },
+        "afbraak": {
+          "type": "boolean"
+        },
+        "vernieuwen": {
+          "type": "boolean"
+        }
+      }
+    },
+    "epc": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "datum": {
+          "type": "string",
+          "format": "date"
+        },
+        "score": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "label": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "code",
+        "datum"
+      ]
+    },
+    "waterbeleid": {
+      "type": "object",
+      "properties": {
+        "p_score": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "g_score": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "overstromingsgebied": {
+          "type": "boolean"
+        },
+        "risicozone": {
+          "type": "boolean"
+        },
+        "signaalgebied": {
+          "type": "boolean"
+        },
+        "signaalgebied_bouwvrij": {
+          "type": "boolean"
+        }
+      }
+    },
+    "stedenbouw": {
+      "type": "object",
+      "properties": {
+        "plannenregister_goedgekeurd": {
+          "type": "boolean"
+        },
+        "plannenregister_niet_goedgekeurd": {
+          "type": "boolean"
+        },
+        "vergunning_afgeleverd": {
+          "type": "boolean"
+        },
+        "meest_recente_bestemming": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uittreksel_datum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "maatregel_opgelegd": {
+          "type": "boolean"
+        },
+        "maatregel_details": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "voorkooprecht_complex": {
+          "type": "boolean"
+        },
+        "in_verkaveling": {
+          "type": "boolean"
+        },
+        "voorkeursbesluit": {
+          "type": "boolean"
+        },
+        "watergevoelig_openruimtegebied": {
+          "type": "boolean"
+        },
+        "inbreuken_geen": {
+          "type": "boolean"
+        },
+        "inbreuken_wel": {
+          "type": "boolean"
+        },
+        "rooilijn_geen": {
+          "type": "boolean"
+        },
+        "rooilijn_getroffen": {
+          "type": "boolean"
+        },
+        "rooilijn_besluit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "natuur_bos": {
+      "type": "object",
+      "properties": {
+        "natuurbehoud_geen": {
+          "type": "boolean"
+        },
+        "natuurbehoud_gebied": {
+          "type": "boolean"
+        },
+        "bosdecreet_geen": {
+          "type": "boolean"
+        },
+        "bosdecreet_gebied": {
+          "type": "boolean"
+        },
+        "bosdecreet_verplichtingen": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "renovatieplicht": {
+      "type": "object",
+      "properties": {
+        "van_toepassing": {
+          "type": "boolean"
+        },
+        "termijn_lopend": {
+          "type": "boolean"
+        }
+      }
+    },
+    "asbestattest": {
+      "type": "object",
+      "properties": {
+        "aanwezig": {
+          "type": "boolean"
+        },
+        "geen": {
+          "type": "boolean"
+        },
+        "gemeenschappelijk": {
+          "type": "boolean"
+        },
+        "code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "datum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "veilig": {
+          "type": "boolean"
+        },
+        "identificatie": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "maatregelen": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "wonen_eigen_streek": {
+      "type": "object",
+      "properties": {
+        "van_toepassing": {
+          "type": "boolean"
+        }
+      }
+    },
+    "voorkooprecht": {
+      "type": "object",
+      "properties": {
+        "geen": {
+          "type": "boolean"
+        },
+        "bestaat": {
+          "type": "boolean"
+        },
+        "type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "zone_wonen": {
+          "type": "boolean"
+        }
+      }
+    },
+    "bodem": {
+      "type": "object",
+      "properties": {
+        "ovam_brief_datum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "attest_datum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "attest_referentie": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attest_inhoud": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "rookmelders": {
+      "type": "object",
+      "properties": {
+        "aanwezig": {
+          "type": "boolean"
+        }
+      }
+    },
+    "logiesdecreet": {
+      "type": "object",
+      "properties": {
+        "van_toepassing": {
+          "type": "boolean"
+        },
+        "brandveiligheid_geen": {
+          "type": "boolean"
+        },
+        "brandveiligheid_aanwezig": {
+          "type": "boolean"
+        },
+        "attest_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attest_organisatie": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "attest_datum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "attest_geldig_tot": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "kosten": {
+      "type": "object",
+      "properties": {
+        "extra_kosten_notaris": {
+          "type": "boolean"
+        },
+        "extra_kosten_koper": {
+          "type": "boolean"
+        },
+        "extra_kosten_details": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "notaris": {
+      "type": "object",
+      "properties": {
+        "verkoper_notaris": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "koper_notaris": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "akte_uiterste_datum": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      }
+    },
+    "algemene_bepalingen": {
+      "type": "object",
+      "properties": {
+        "erfdienstbaarheden_vermeld": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "makelaar",
+    "verkoper",
+    "koper",
+    "goed",
+    "prijs"
+  ]
+}
